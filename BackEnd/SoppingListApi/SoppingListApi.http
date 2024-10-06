@@ -1,0 +1,6 @@
+@SoppingListApi_HostAddress = http://localhost:5201
+
+GET {{SoppingListApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

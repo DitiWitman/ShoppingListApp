@@ -1,0 +1,42 @@
+# node.js 
+node_modules/
+npm-debug.log*
+
+# Include
+logs/
+*.log
+*.log.*
+
+# configuration
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# type
+*.tsbuildinfo
+
+# Vs
+.idea/
+.vscode/
+.DS_Store
+
+# .Net
+bin/
+obj/
+*.user
+*.suo
+*.vspscc
+*.vssscc
+appsettings.Local.json
+*.dll
+*.pdb
+
+# convert 
+coverage/
+coverage.json
+lcov-report/
+
+
+ 
