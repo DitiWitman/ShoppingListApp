@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|c:\\users\\the user\\desktop\\shoppinglistapp\\backend\\soppinglistapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\soppinglistapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\soppinglistapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\bl\\blservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,12 +15,8 @@
       "RelativeMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|solutionrelative:bl\\blapi\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\soppinglistapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\models\\shoppinglistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\models\\shoppinglistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\dalservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,8 +27,24 @@
       "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\dalapi\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\bl\\blapi\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|solutionrelative:bl\\blapi\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|c:\\users\\the user\\desktop\\shoppinglistapp\\backend\\soppinglistapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|c:\\users\\the user\\desktop\\shoppinglistapp\\backend\\soppinglistapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\soppinglistapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A91F436-A010-4DB5-9C32-175C843674A1}|SoppingListApi\\SoppingListApi.csproj|solutionrelative:soppinglistapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\models\\shoppinglistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\models\\shoppinglistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\dalapi\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\dal\\dalservices\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A8BA129-EAB9-4CC5-BDDF-B92A7A770554}|DAL\\DAL.csproj|solutionrelative:dal\\dalservices\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\bl\\blapi\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|solutionrelative:bl\\blapi\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F48492A1-B713-4860-885A-B85D751C04F9}|BL\\BL.csproj|C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -160,84 +164,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ppsettings.Local.json",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
-              "RelativeDocumentMoniker": "..\\..\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
-              "RelativeToolTip": "..\\..\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T10:53:29.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\ProductService.cs",
               "RelativeDocumentMoniker": "BL\\BlApi\\ProductService.cs",
               "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\ProductService.cs",
               "RelativeToolTip": "BL\\BlApi\\ProductService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAwwAoAAAAiAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAgwCkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T00:12:27.315Z"
+              "WhenOpened": "2024-10-02T00:12:27.315Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "SoppingListApi\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Controllers\\ProductController.cs",
               "RelativeToolTip": "SoppingListApi\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAwwBMAAAApAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAkwDEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:27:22.383Z"
+              "WhenOpened": "2024-10-01T19:27:22.383Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\appsettings.json",
-              "RelativeDocumentMoniker": "SoppingListApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\appsettings.json",
-              "RelativeToolTip": "SoppingListApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-01T23:28:05.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Program.cs",
               "RelativeDocumentMoniker": "SoppingListApi\\Program.cs",
               "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Program.cs",
               "RelativeToolTip": "SoppingListApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T23:31:30.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalApi\\IProductRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DalApi\\IProductRepository.cs",
               "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalApi\\IProductRepository.cs",
               "RelativeToolTip": "DAL\\DalApi\\IProductRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvwwAAAAVAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAxwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T22:39:48.425Z"
+              "WhenOpened": "2024-10-01T22:39:48.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlServices\\IProductService.cs",
+              "RelativeDocumentMoniker": "BL\\BlServices\\IProductService.cs",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlServices\\IProductService.cs",
+              "RelativeToolTip": "BL\\BlServices\\IProductService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA/wA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:24:56.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\CategoryService.cs",
+              "RelativeDocumentMoniker": "BL\\BlApi\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\CategoryService.cs",
+              "RelativeToolTip": "BL\\BlApi\\CategoryService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:25:00.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalServices\\ProductService.cs",
+              "RelativeDocumentMoniker": "DAL\\DalServices\\ProductService.cs",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalServices\\ProductService.cs",
+              "RelativeToolTip": "DAL\\DalServices\\ProductService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T22:39:15.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Products.cs",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\Models\\Products.cs",
+              "RelativeToolTip": "DAL\\Models\\Products.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T22:30:57.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "SoppingListApi\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "SoppingListApi\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T19:21:36.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ShoppingListContext.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\Models\\ShoppingListContext.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\ShoppingListContext.cs",
@@ -249,43 +297,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlServices\\IProductService.cs",
-              "RelativeDocumentMoniker": "BL\\BlServices\\IProductService.cs",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlServices\\IProductService.cs",
-              "RelativeToolTip": "BL\\BlServices\\IProductService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAADwvwcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T19:24:56.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalServices\\ProductService.cs",
-              "RelativeDocumentMoniker": "DAL\\DalServices\\ProductService.cs",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalServices\\ProductService.cs",
-              "RelativeToolTip": "DAL\\DalServices\\ProductService.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAADwvxUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T22:39:15.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\Models\\Products.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Products.cs",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\Models\\Products.cs",
-              "RelativeToolTip": "DAL\\Models\\Products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T22:30:57.637Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SoppingListApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\appsettings.json",
+              "RelativeToolTip": "SoppingListApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T23:28:05.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ppsettings.Local.json",
+              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
+              "RelativeDocumentMoniker": "..\\..\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
+              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
+              "RelativeToolTip": "..\\..\\ShoppingListApi\\BackEnd\\SoppingListApi\\ppsettings.Local.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-06T10:53:29.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalApi\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DalApi\\ICategoryRepository.cs",
@@ -297,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\DAL\\DalServices\\CategoryService.cs",
               "RelativeDocumentMoniker": "DAL\\DalServices\\CategoryService.cs",
@@ -309,19 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\CategoryService.cs",
-              "RelativeDocumentMoniker": "BL\\BlApi\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlApi\\CategoryService.cs",
-              "RelativeToolTip": "BL\\BlApi\\CategoryService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T23:25:00.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BlManager.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BlManager.cs",
               "RelativeDocumentMoniker": "BL\\BlManager.cs",
@@ -333,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SoppingListApi",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\SoppingListApi\\SoppingListApi.csproj",
               "RelativeDocumentMoniker": "SoppingListApi\\SoppingListApi.csproj",
@@ -345,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TenantController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\TenantController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\TenantController.cs",
@@ -357,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "TenantForComitteeController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\TenantForComitteeController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\TenantForComitteeController.cs",
@@ -369,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BlTenantForComitteeService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlServices\\BlTenantForComitteeService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlServices\\BlTenantForComitteeService.cs",
@@ -381,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IBlTenantForComittee.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlApi\\IBlTenantForComittee.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlApi\\IBlTenantForComittee.cs",
@@ -393,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Program.cs",
@@ -405,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\appsettings.json",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\appsettings.json",
@@ -417,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "BlProposalService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlServices\\BlProposalService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlServices\\BlProposalService.cs",
@@ -429,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BL.csproj",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\ShoppingListApp\\BackEnd\\BL\\BL.csproj",
               "RelativeDocumentMoniker": "BL\\BL.csproj",
@@ -441,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ProposalController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\ProposalController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\ProposalController.cs",
@@ -453,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "GlobalUsingWebApi.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\GlobalUsingWebApi.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\GlobalUsingWebApi.cs",
@@ -465,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "DalMonthlyExpenseService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\DAL\\DalServices\\DalMonthlyExpenseService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\DAL\\DalServices\\DalMonthlyExpenseService.cs",
@@ -477,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "MonthlyExpenseController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\MonthlyExpenseController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\MonthlyExpenseController.cs",
@@ -489,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "BlOneTimeExpenseService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlServices\\BlOneTimeExpenseService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlServices\\BlOneTimeExpenseService.cs",
@@ -501,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "BlTenantService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlServices\\BlTenantService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlServices\\BlTenantService.cs",
@@ -513,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "BlMonthlyExpenseService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlServices\\BlMonthlyExpenseService.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlServices\\BlMonthlyExpenseService.cs",
@@ -525,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "IBlProposal.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlApi\\IBlProposal.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlApi\\IBlProposal.cs",
@@ -537,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BlTenantForComitteeService.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlServices\\BlTenantForComitteeService.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlServices\\BlTenantForComitteeService.cs",
@@ -549,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "IBlTenant.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlApi\\IBlTenant.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlApi\\IBlTenant.cs",
@@ -561,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Tenant.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Tenant.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Tenant.cs",
@@ -573,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MonthlyExpense.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\MonthlyExpense.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\MonthlyExpense.cs",
@@ -585,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "TenantForComitteeController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\CoHousing\\Controllers\\TenantForComitteeController.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\CoHousing\\Controllers\\TenantForComitteeController.cs",
@@ -597,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "OneTimeExpenseController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\OneTimeExpenseController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\OneTimeExpenseController.cs",
@@ -609,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Building.cs",
               "DocumentMoniker": "H:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E0\u05DB\u05D5\u05DF \u05DC\u05D9\u05D5\u05DD \u05E8\u05D0\u05E9\u05D5\u05DF \u05D1\u05E6\u05D4\u05E8\u05D9\u05D9\u05DD\\CoHousing\\CoHousing\\BlModels\\Building.cs",
               "ToolTip": "H:\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E0\u05DB\u05D5\u05DF \u05DC\u05D9\u05D5\u05DD \u05E8\u05D0\u05E9\u05D5\u05DF \u05D1\u05E6\u05D4\u05E8\u05D9\u05D9\u05DD\\CoHousing\\CoHousing\\BlModels\\Building.cs",
@@ -619,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Proposal.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Proposal.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Proposal.cs",
@@ -631,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "IBlMonthlyExpense.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlApi\\IBlMonthlyExpense.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlApi\\IBlMonthlyExpense.cs",
@@ -643,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "IBlOneTimeExpense.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\BL\\BlApi\\IBlOneTimeExpense.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\BL\\BlApi\\IBlOneTimeExpense.cs",
@@ -655,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IBlTenantForComittee.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlApi\\IBlTenantForComittee.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlApi\\IBlTenantForComittee.cs",
@@ -667,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "OneTimeExpense.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\OneTimeExpense.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\OneTimeExpense.cs",
@@ -679,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Building.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Building.cs",
               "RelativeDocumentMoniker": "..\\..\\CoHousingProject-main\\CoHousingProject-main\\CoHousing\\BL\\BlModels\\Building.cs",
@@ -691,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "MonthlyExpenseController.cs",
               "DocumentMoniker": "C:\\Users\\The user\\Desktop\\tryToday\\BackEnd\\CoHousing\\Controllers\\MonthlyExpenseController.cs",
               "RelativeDocumentMoniker": "..\\..\\tryToday\\BackEnd\\CoHousing\\Controllers\\MonthlyExpenseController.cs",

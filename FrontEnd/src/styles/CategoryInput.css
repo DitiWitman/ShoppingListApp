@@ -1,0 +1,17 @@
+.category-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.category-select {
+    margin-right: 16px;
+}
+
+.product-input {
+    margin-right: 16px;
+}
+
+.add-product-btn {
+    height: 56px;
+}

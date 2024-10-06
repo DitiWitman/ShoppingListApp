@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.app-header {
+  background-color: #3f51b5;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cart-icon {
   color: white;
 }
+/* styles.css */
 
-.App-link {
-  color: #61dafb;
+/* מרכז את הכותרות */
+h6 {
+  text-align: center;
+  /* מרכז את הטקסט */
+  margin: 20px 0;
+  /* מוסיף רווח סביב הכותרת */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* סידור הקטגוריות */
+.category-list {
+  display: flex;
+  /* הופך את הקטגוריות לשורה */
+  flex-wrap: wrap;
+  /* מאפשר שהקטגוריות ימשיכו בשורה חדשה אם אין מקום */
+  justify-content: center;
+  /* מרכז את הקטגוריות */
+  gap: 16px;
+  /* מוסיף רווח בין הקטגוריות */
+}
+
+/* רווחים בין השורות */
+.category-input-container {
+  margin-bottom: 20px;
+  /* מוסיף רווח בין האינפוטים לסרגל */
+}
+
+.product-input {
+  margin-top: 16px;
+  /* מוסיף רווח בין שדה הקטגוריה לשדה המוצר */
 }

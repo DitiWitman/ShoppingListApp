@@ -1,31 +1,43 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../configuration/store';
-import { fetchCategories } from '../modules/categoryManagement'; // יבוא הפונקציה
-import { Box, Typography, Grid, Paper } from '@mui/material';
+import React from 'react';
+import { Product } from '../modules/product';
+import { Category } from '../modules/category'; // הייבוא של טיפוס הקטגוריה
 
-const CategoryList: React.FC = () => {
-    const dispatch = useDispatch();
-    const categories = useSelector((state: RootState) => state.category.categories);
+interface CategoryListProps {
+    products: Product[];
+    categories: Category[]; // הוספת קטגוריות כפרופס
+}
 
-    useEffect(() => {
-        dispatch(fetchCategories() as any); // הוספת as any על מנת להימנע משגיאות
-    }, [dispatch]);
+const CategoryList: React.FC<CategoryListProps> = ({ products, categories }) => {
+    // יצירת מפת קטגוריות
+    const categoriesMap = categories.reduce((acc: { [key: number]: string }, category) => {
+        acc[category.id] = category.name;
+        return acc;
+    }, {});
+
+    // חלוקת המוצרים לפי קטגוריות
+    const groupedProducts = products.reduce((acc: { [key: number]: Product[] }, product) => {
+        if (!acc[product.categoryid]) {
+            acc[product.categoryid] = [];
+        }
+        acc[product.categoryid].push(product);
+        return acc;
+    }, {});
 
     return (
-        <Box sx={{ padding: 2 }}>
-            <Grid container spacing={2}>
-                {categories.map((category) => (
-                    <Grid item xs={12} sm={6} md={4} key={category.id}>
-                        <Paper sx={{ padding: 2 }}>
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                                {category.name}
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                ))}
-            </Grid>
-        </Box>
+        <div>
+            {Object.keys(groupedProducts).map(categoryId => (
+                <div key={categoryId}>
+                    <h3>קטגוריה {categoriesMap[Number(categoryId)] || categoryId}</h3> {/* הצגת שם הקטגוריה */}
+                    <ul>
+                        {groupedProducts[Number(categoryId)].map(product => (
+                            <li key={product.id}>
+                                {product.name} - כמות: {product.amount}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
     );
 };
 

@@ -21,5 +21,27 @@ namespace BL.BlApi
         {
             return _productRepository.GetAllproducts();
         }
+
+        public void  AddProduct(Products product)
+        {
+            _productRepository.AddProduct(product); 
+        }
+
+        public void UpdateProductAmount(int productId, int amount)
+        {
+            _productRepository.UpdateProductAmount(productId, amount); 
+        }
+
+        public void AddProducts(List<Products> products) 
+        {
+            _productRepository.AddProducts(products); 
+        }
+
+        public void ConfirmOrder(List<Products> products) 
+        {
+            AddProducts(products); 
+        }
+
+
     }
 }
