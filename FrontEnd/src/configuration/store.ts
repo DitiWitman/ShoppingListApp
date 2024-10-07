@@ -1,17 +1,17 @@
-// src/configuration/store.ts
-
 import { configureStore } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk'; // ייבוא של thunk
+import thunk from 'redux-thunk';
 import categoryReducer from '../modules/categorySlice';
+import productReducer from '../modules/productManagement'; // יבוא של ניהול מוצרים
 
 const store = configureStore({
     reducer: {
         category: categoryReducer,
+        product: productReducer, // הוספת ניהול מוצרים ל-store
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
-            thunk: true, // ודא ש-thunk מופעל
-            serializableCheck: false, // אם אתה רוצה להשבית בדיקות על serializability
+            thunk: true,
+            serializableCheck: false,
         }),
 });
 
