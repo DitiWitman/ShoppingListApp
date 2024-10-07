@@ -1,7 +1,7 @@
 
 export interface Product {
-    id?: number;  
+    id: number;
     name: string;
     amount: number;
-    categoryid: number;
+    categoryid: number; // הוסף את המאפיין הזה
 }

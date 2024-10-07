@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { MenuItem, Select, TextField, Button, Box } from '@mui/material';
 import { Category } from '../modules/category';
-import { MenuItem, Select, TextField, Button } from '@mui/material';
+import { Product } from '../modules/product';
 
 interface CategoryInputProps {
     onAddProduct: (product: { name: string; categoryId: string; quantity: number; }) => Promise<void>;
     categories: Category[];
+    errors: { productName: string; category: string };
+    onConfirmOrder: () => Promise<void>;
+    products: Product[];
 }
 
-const CategoryInput: React.FC<CategoryInputProps> = ({ onAddProduct, categories }) => {
+const CategoryInput: React.FC<CategoryInputProps> = ({ onAddProduct, categories, errors, onConfirmOrder, products }) => {
     const [productName, setProductName] = useState('');
     const [selectedCategoryId, setSelectedCategoryId] = useState('');
     const [quantity, setQuantity] = useState(1);
@@ -22,23 +26,36 @@ const CategoryInput: React.FC<CategoryInputProps> = ({ onAddProduct, categories 
     };
 
     return (
-        <div style={{ marginBottom: '20px' }}>
+        <Box
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: 2,
+                marginBottom: 4
+            }}
+            component="form"
+            noValidate
+            autoComplete="off"
+        >
             <TextField
                 label="שם המוצר"
                 value={productName}
                 onChange={(e) => setProductName(e.target.value)}
-                style={{ marginRight: '10px' }} // עיצוב נוסף
+                error={!!errors.productName}
+                helperText={errors.productName}
+                sx={{ minWidth: '150px' }}
             />
             <Select
                 value={selectedCategoryId}
                 onChange={(e) => setSelectedCategoryId(e.target.value)}
                 displayEmpty
-                style={{ marginRight: '10px' }} // עיצוב נוסף
+                error={!!errors.category}
+                sx={{ minWidth: '150px' }}
             >
                 <MenuItem value="">
                     <em>בחר קטגוריה</em>
                 </MenuItem>
-                {categories.map(category => (
+                {categories.map((category) => (
                     <MenuItem key={category.id} value={category.id}>
                         {category.name}
                     </MenuItem>
@@ -48,13 +65,28 @@ const CategoryInput: React.FC<CategoryInputProps> = ({ onAddProduct, categories 
                 type="number"
                 label="כמות"
                 value={quantity}
-                onChange={(e) => setQuantity(Number(e.target.value))}
-                style={{ marginRight: '10px' }} // עיצוב נוסף
+                onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+                inputProps={{ min: 1 }}
+                sx={{ minWidth: '100px' }}
             />
-            <Button onClick={handleAdd} variant="contained" color="primary">
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={handleAdd}
+            >
                 הוסף מוצר
             </Button>
-        </div>
+            <Button
+                variant="contained"
+                color="secondary"
+                sx={{ marginLeft: 2 }}
+                onClick={onConfirmOrder}
+            >
+                אשר הזמנה
+            {/* {/* </Button> */}
+            
+            </Button> 
+        </Box>
     );
 };
 
