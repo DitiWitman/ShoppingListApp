@@ -17,7 +17,7 @@
   ## טכנולוגיות וספריות עיקריות:
 - **🌐 AWS**: שימוש בשירותי הענן של AWS לניהול שרת ותשתיות.
 - **PostgreSQL**: מסד נתונים מבוזר בקוד פתוח המאפשר אחסון נתוני המוצרים והקטגוריות.
-- **pgAdmin**: ממשק ניהול ויזואלי לניהול וניטור נתוני PostgreSQL.
+- **pgAdmin**: ממשק ניהול ויזואלי לניהול נתוני PostgreSQL.
 - **React**: לבניית הממשק האינטראקטיבי
 - **Redux Toolkit**: לניהול ה-state של האפליקציה
 - **Material-UI**: לעיצוב קומפוננטות בצורה מקצועית ורספונסיבית
