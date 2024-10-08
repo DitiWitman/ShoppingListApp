@@ -3,7 +3,7 @@ import { TextField, Button, Select, MenuItem, FormControl, InputLabel, Box } fro
 import { Category } from '../modules/category';
 
 interface CategoryInputProps {
-    onAddProduct: (product: { name: string; categoryId: string; quantity: number; }) => void;
+    onAddProduct: (product: { name: string; categoryid: string; quantity: number; }) => void;
     categories: Category[];
     errors: { productName: string; category: string };
     products: any[]; // Adjust type as needed
@@ -15,7 +15,7 @@ const CategoryInput: React.FC<CategoryInputProps> = ({ onAddProduct, categories,
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        onAddProduct({ name: productName, categoryId: selectedCategory, quantity: 1 }); // Set default quantity to 1
+        onAddProduct({ name: productName, categoryid: selectedCategory, quantity: 1 }); // Set default quantity to 1
         setProductName('');
         setSelectedCategory('');
     };
