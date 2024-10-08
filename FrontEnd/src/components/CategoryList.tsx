@@ -26,6 +26,57 @@ interface CategoryListProps {
     decreaseQuantity: (id: number) => void;
 }
 
+const ProductItem: React.FC<{
+    product: Product;
+    increaseQuantity: (id: number) => void;
+    decreaseQuantity: (id: number) => void;
+    setProducts: React.Dispatch<React.SetStateAction<Product[]>>;
+}> = ({ product, increaseQuantity, decreaseQuantity, setProducts }) => (
+    <Box sx={{
+        display: 'flex',
+        alignItems: 'center',
+        margin: '5px',
+        border: 'none',
+        padding: '5px',
+        width: '150px',
+    }}>
+        <Button
+            variant="outlined"
+            color="secondary"
+            onClick={() => {
+                if (product.amount <= 0) return;
+                decreaseQuantity(product.id);
+                if (product.amount === 1) {
+                    setProducts((prev) => prev.filter(p => p.id !== product.id));
+                }
+            }}
+            disabled={product.amount <= 0}
+            size="small"
+            sx={{ minWidth: '24px', padding: '2px' }}
+        >
+            <RemoveIcon fontSize="small" />
+        </Button>
+        <Typography variant="body2" sx={{
+            margin: '0 5px',
+            width: 'auto',
+            textAlign: 'center',
+            fontWeight: 'bold',
+        }}>
+            {product.name.length > 14 ? `${product.name.slice(0, 14)}...` : product.name}
+            <span style={{ fontWeight: 'bold' }}> ({product.amount})</span>
+        </Typography>
+        <Button
+            variant="contained"
+            color="primary"
+            onClick={() => increaseQuantity(product.id)}
+            size="small"
+            sx={{ minWidth: '24px', padding: '2px' }}
+        >
+            <AddIcon fontSize="small" />
+        </Button>
+    </Box>
+);
+
 const CategoryList: React.FC<CategoryListProps> = ({
     products,
     categories,
@@ -49,7 +100,7 @@ const CategoryList: React.FC<CategoryListProps> = ({
                     <TableHead>
                         <TableRow>
                             {categories.map((category) => (
-                                <TableCell key={category.id} align="center" sx={{ width: '200px' }}> {/* רוחב קבוע לכל עמודה */}
+                                <TableCell key={category.id} align="center" sx={{ width: '200px' }}>
                                     <Icon sx={{ marginRight: 1 }} />
                                     <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                                         {category.name}
@@ -63,49 +114,13 @@ const CategoryList: React.FC<CategoryListProps> = ({
                             {categorizedProducts.map((category) => (
                                 <TableCell key={category.id} align="center">
                                     {category.products.map((product) => (
-                                        <Box key={product.id} sx={{
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            margin: '5px',
-                                            border: 'none', // לא להראות קו גבול
-                                            padding: '5px',
-                                            width: '150px', // רוחב קבוע לכל תיבה
-                                        }}>
-                                            <Button
-                                                variant="outlined"
-                                                color="secondary"
-                                                onClick={() => {
-                                                    if (product.amount <= 0) return; // אם הכמות אפס לא להפחית
-                                                    decreaseQuantity(product.id);
-                                                    if (product.amount === 1) {
-                                                        setProducts((prev) => prev.filter(p => p.id !== product.id));
-                                                    }
-                                                }}
-                                                disabled={product.amount <= 0}
-                                                size="small"
-                                                sx={{ minWidth: '24px', padding: '2px' }} // הקטנת גובה הכפתור
-                                            >
-                                                <RemoveIcon fontSize="small" />
-                                            </Button>
-                                            <Typography variant="body2" sx={{
-                                                margin: '0 5px',
-                                                width: 'auto',
-                                                textAlign: 'center',
-                                                fontWeight: 'bold', // בולט יותר
-                                            }}>
-                                                {product.name.length > 14 ? `${product.name.slice(0, 14)}...` : product.name}
-                                                <span style={{ fontWeight: 'bold' }}> ({product.amount})</span> {/* הצגת הכמות */}
-                                            </Typography>
-                                            <Button
-                                                variant="contained"
-                                                color="primary"
-                                                onClick={() => increaseQuantity(product.id)}
-                                                size="small"
-                                                sx={{ minWidth: '24px', padding: '2px' }} // הקטנת גובה הכפתור
-                                            >
-                                                <AddIcon fontSize="small" />
-                                            </Button>
-                                        </Box>
+                                        <ProductItem
+                                            key={product.id}
+                                            product={product}
+                                            increaseQuantity={increaseQuantity}
+                                            decreaseQuantity={decreaseQuantity}
+                                            setProducts={setProducts}
+                                        />
                                     ))}
                                 </TableCell>
                             ))}
