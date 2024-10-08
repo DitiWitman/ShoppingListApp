@@ -7,7 +7,7 @@ const Header: React.FC<{ itemCount: number }> = ({ itemCount }) => {
         <AppBar position="static">
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                    רשימת קניות
+                   Shopping List- רשימת קניות
                 </Typography>
                 <IconButton color="inherit">
                     <Badge badgeContent={itemCount} color="secondary">

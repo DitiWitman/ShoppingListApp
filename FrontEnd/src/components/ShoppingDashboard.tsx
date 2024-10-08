@@ -16,7 +16,7 @@ const ShoppingDashboard: React.FC = () => {
     const [errors, setErrors] = useState({ productName: '', category: '' });
     const [selectedCategoryName, setSelectedCategoryName] = useState<string>('');
 
-    // Fetch categories from the API
+    // Get all categories
     const fetchCategories = async () => {
         setLoading(true);
         try {
@@ -24,64 +24,93 @@ const ShoppingDashboard: React.FC = () => {
             setCategories(response.data);
         } catch (error) {
             console.error('Error fetching categories:', error);
+        } finally {
+            setLoading(false);
         }
-        setLoading(false);
+    }; const fetchProductsFromApi = async () => { try { const response = await axios.get('http://localhost:5201/api/Product'); const productsFromApi: Product[] = response.data; setProducts(productsFromApi); setItemCount(productsFromApi.reduce((total, product) => total + product.amount, 0)); localStorage.setItem('products', JSON.stringify(productsFromApi)); } catch (error) { console.error('Error fetching products from API:', error); } }; // Call fetchStoredProducts in useEffect useEffect(() => { fetchCategories(); fetchStoredProducts(); // תישאר כמו שהיא }, []);  
+
+
+    // Get all products from localStorage
+    const fetchStoredProducts = () => {
+        const storedProducts = localStorage.getItem('products');
+        if (storedProducts) {
+            const parsedProducts: Product[] = JSON.parse(storedProducts);
+            setProducts(parsedProducts);
+            setItemCount(parsedProducts.reduce((total, product) => total + product.amount, 0));
+        }
+        else{
+            fetchProductsFromApi();
+        }
     };
 
     // Handle adding a product
-    const handleAddProduct = async (product: { name: string; categoryId: string; quantity: number; }) => {
+    const handleAddProduct = async (product: { name: string; categoryid: string; quantity: number; }) => {
         let error = { productName: '', category: '' };
         if (!product.name) error.productName = 'יש להזין שם מוצר';
-        if (!product.categoryId) error.category = 'יש לבחור קטגוריה';
+        if (!product.categoryid) error.category = 'יש לבחור קטגוריה';
         setErrors(error);
 
         if (error.productName || error.category) return;
 
-        try {
-            const newProduct: Product = {
-                id: Date.now(),
-                name: product.name,
-                categoryid: Number(product.categoryId),
-                amount: product.quantity,
-            };
+        const newProduct: Product = {
+            id: Date.now(),
+            name: product.name,
+            categoryid: Number(product.categoryid),
+            amount: product.quantity,
+        };
 
-            // Set selected category name
-            const category = categories.find(cat => cat.id === Number(product.categoryId));
-            if (category) {
-                setSelectedCategoryName(category.name);
-            }
+        const existingProductIndex = products.findIndex(p => p.name === newProduct.name && p.categoryid === newProduct.categoryid);
+        const updatedProducts = [...products];
 
-            // Check for existing product
-            const existingProductIndex = products.findIndex(p => p.name === newProduct.name && p.categoryid === newProduct.categoryid);
-            const updatedProducts = [...products];
-
-            if (existingProductIndex >= 0) {
-                updatedProducts[existingProductIndex].amount += newProduct.amount;
-            } else {
-                updatedProducts.push(newProduct);
-            }
-
-            setProducts(updatedProducts);
-            setItemCount(prevCount => prevCount + product.quantity);
-            await axios.post('http://localhost:5201/api/Product', newProduct);
-        } catch (error) {
-            console.error('Error adding product:', error);
+        if (existingProductIndex >= 0) {
+            updatedProducts[existingProductIndex].amount += newProduct.amount;
+        } else {
+            updatedProducts.push(newProduct);
         }
+
+        setProducts(updatedProducts);
+        setItemCount(prevCount => prevCount + product.quantity);
+        localStorage.setItem('products', JSON.stringify(updatedProducts));
     };
 
-    // Handle confirming the order
+    //  make a order
+    
     const handleConfirmOrder = async () => {
+        setLoading(true); //state
         try {
-            alert("ההזמנה אושרה!");
+            const responses = await Promise.all(products.map(product =>{
+                const{id,...rest}=product;
+             return  axios.post('http://localhost:5201/api/Product', rest)
+         } ));
+         //chack the response
+            responses.forEach(response => console.log('Product saved:', response.data));
+            // Clear the products list and local storage
             setProducts([]);
             setItemCount(0);
-            localStorage.removeItem('products');
-            setSelectedCategoryName('');
+            localStorage.removeItem('products'); // Clear localStorage
+            alert("ההזמנה אושרה!");
         } catch (error) {
-            console.error('Error confirming order:', error);
+            if (axios.isAxiosError(error) && error.response) {
+                const validationErrors = error.response.data.errors;
+                let errorMessage = 'שגיאה בעת אישור ההזמנה:';
+
+                if (validationErrors) {
+                    Object.keys(validationErrors).forEach(key => {
+                        errorMessage += ` ${key}: ${validationErrors[key].join(', ')}`;
+                    });
+                } else {
+                    errorMessage += ' שגיאה לא ידועה.';
+                }
+
+                alert(errorMessage);
+            } else {
+                console.error('Error confirming order:', error);
+                alert('שגיאה לא צפויה התרחשה.');
+            }
+        } finally {
+            setLoading(false); // Reset loading state
         }
     };
-
     // Export products to a text file
     const exportToTXT = () => {
         const storedProducts = localStorage.getItem('products');
@@ -106,38 +135,25 @@ const ShoppingDashboard: React.FC = () => {
         URL.revokeObjectURL(url);
     };
 
-    // Fetch categories and products from localStorage on component mount
     useEffect(() => {
         fetchCategories();
-        const storedProducts = localStorage.getItem('products');
-        if (storedProducts) {
-            const parsedProducts: Product[] = JSON.parse(storedProducts);
-            setProducts(parsedProducts);
-            setItemCount(parsedProducts.reduce((total: number, product: Product) => total + product.amount, 0));
-        }
+        fetchStoredProducts();
     }, []);
 
-    // Increase quantity of a product
-    const increaseQuantity = (productId: number) => {
+    // Update quantity
+    const updateQuantity = (productId: number, change: number) => {
         const updatedProducts = products.map(product =>
-            product.id === productId ? { ...product, amount: product.amount + 1 } : product
-        );
-        setProducts(updatedProducts);
-        setItemCount(prevCount => prevCount + 1);
-        localStorage.setItem('products', JSON.stringify(updatedProducts));
-    };
-
-    // Decrease quantity of a product
-    const decreaseQuantity = (productId: number) => {
-        const updatedProducts = products.map(product =>
-            product.id === productId && product.amount > 0
-                ? { ...product, amount: product.amount - 1 }
+            product.id === productId
+                ? { ...product, amount: Math.max(product.amount + change, 0) }
                 : product
         );
         setProducts(updatedProducts);
-        setItemCount(prevCount => (prevCount > 0 ? prevCount - 1 : 0));
+        setItemCount(prevCount => prevCount + change);
         localStorage.setItem('products', JSON.stringify(updatedProducts));
     };
+
+    const increaseQuantity = (productId: number) => updateQuantity(productId, 1);
+    const decreaseQuantity = (productId: number) => updateQuantity(productId, -1);
 
     return (
         <Container>
@@ -146,28 +162,15 @@ const ShoppingDashboard: React.FC = () => {
                 <Button variant="contained" color="primary" onClick={exportToTXT} style={{ marginBottom: '8px' }}>
                     <Download /> ייצא לקובץ טקסט
                 </Button>
-                <Button variant="contained" color="primary" onClick={handleConfirmOrder}>
+                <Button variant="contained" color="primary" onClick={handleConfirmOrder} style={{ marginTop: '20px' }}>
                     אישור הזמנה
                 </Button>
             </div>
-
-            <CategoryInput
-                onAddProduct={handleAddProduct}
-                categories={categories}
-                errors={errors}
-                products={products}
-            />
+            <CategoryInput onAddProduct={handleAddProduct} categories={categories} errors={errors} products={products} />
             {loading ? (
                 <CircularProgress />
             ) : (
-                <CategoryList
-                    products={products}
-                    categories={categories}
-                    setProducts={setProducts}
-                    setItemCount={setItemCount}
-                    increaseQuantity={increaseQuantity}
-                    decreaseQuantity={decreaseQuantity}
-                />
+                <CategoryList products={products} categories={categories} setProducts={setProducts} setItemCount={setItemCount} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} />
             )}
         </Container>
     );
