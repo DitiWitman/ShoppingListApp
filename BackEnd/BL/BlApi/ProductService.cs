@@ -41,6 +41,10 @@ namespace BL.BlApi
         {
             AddProducts(products); 
         }
+        public int GetTotalItems()
+        {
+            return _productRepository.GetTotalItems(); 
+        }
 
 
     }

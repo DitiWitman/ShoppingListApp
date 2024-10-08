@@ -12,6 +12,7 @@ namespace BL.Interfaces
         void UpdateProductAmount(int productId, int amount);
 
         public void ConfirmOrder(List<Products> products);
-        //void ConfirmOrder(List<Products> products); 
+
+        int GetTotalItems();
     }
 }

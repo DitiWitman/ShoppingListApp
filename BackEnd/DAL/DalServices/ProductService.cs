@@ -54,5 +54,9 @@ namespace DAL.Services
                 AddProduct(product);
             }
         }
+        public int GetTotalItems()
+        {
+            return _context.Products.Sum(p => p.amount); 
+        }
     }
 }

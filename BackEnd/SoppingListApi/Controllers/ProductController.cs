@@ -48,5 +48,13 @@ namespace SoppingListApi.Controllers
         }
 
 
+        [HttpGet("total-items")]
+        public ActionResult<int> GetTotalItems()
+        {
+            var totalItems = _productService.GetTotalItems(); 
+
+            return Ok(totalItems);
+        }
+
     }
 }

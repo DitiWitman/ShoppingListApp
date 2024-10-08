@@ -17,6 +17,6 @@ namespace DAL.Interfaces
         void AddProducts(List<Products> products);
 
         void UpdateProductAmount(int productId, int amount);
-
+        int GetTotalItems();
     }
 }

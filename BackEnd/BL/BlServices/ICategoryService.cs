@@ -5,6 +5,7 @@ namespace BL.Interfaces
 {
     public interface ICategoryService
     {
-        IEnumerable<Category> GetAllCategories(); 
+        IEnumerable<Category> GetAllCategories();
+
     }
 }

@@ -19,7 +19,8 @@ namespace DAL.Services
 
         public IEnumerable<Category> GetAllCategories()
         {
-            return _context.Categories.ToList(); // Fetching all categories
+            return _context.Categories.ToList(); 
         }
+
     }
 }
