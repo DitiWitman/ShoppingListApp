@@ -35,8 +35,9 @@ const ShoppingDashboard: React.FC = () => {
         const storedProducts = localStorage.getItem('products');
         if (storedProducts) {
             const parsedProducts: Product[] = JSON.parse(storedProducts);
-            setProducts(parsedProducts);
-            setItemCount(parsedProducts.reduce((total, product) => total + product.amount, 0));
+            const prodactFilter = parsedProducts.filter(product=>product.amount>0 );
+            setProducts(prodactFilter);
+            setItemCount(prodactFilter.reduce((total, product) => total + product.amount,0));
         }
         else{
             fetchProductsFromApi();
@@ -108,10 +109,10 @@ const ShoppingDashboard: React.FC = () => {
                 alert('שגיאה לא צפויה התרחשה.');
             }
         } finally {
-            setLoading(false); // Reset loading state
+            setLoading(false); 
         }
     };
-    // Export products to a text file
+    // text file
     const exportToTXT = () => {
         const storedProducts = localStorage.getItem('products');
         if (!storedProducts) {
