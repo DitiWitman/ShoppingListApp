@@ -45,7 +45,10 @@ namespace BL.BlApi
         {
             return _productRepository.GetTotalItems(); 
         }
-
+        public void DeleteProduct(int productId)
+        {
+            _productRepository.DeletedProduct(productId);
+        }
 
     }
 }

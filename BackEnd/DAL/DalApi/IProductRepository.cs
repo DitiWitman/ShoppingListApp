@@ -15,6 +15,7 @@ namespace DAL.Interfaces
         void AddProduct(Products product);
 
         void AddProducts(List<Products> products);
+        void DeleteProduct(int productId);
 
         void UpdateProductAmount(int productId, int amount);
         int GetTotalItems();

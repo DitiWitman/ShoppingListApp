@@ -1,15 +1,16 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';//->middlewares
+import productReducer from '../modules/productSlice';
 import categoryReducer from '../modules/categorySlice';
-import productReducer from '../modules/productManagement';
-
+//fun toolkit => 
 const store = configureStore({
     reducer: {
+        product: productReducer,
         category: categoryReducer,
-        product: productReducer, 
     },
 });
-
-export type AppDispatch = typeof store.dispatch;
+//state
 export type RootState = ReturnType<typeof store.getState>;
+//actions,
+export type AppDispatch = typeof store.dispatch;
 
 export default store;

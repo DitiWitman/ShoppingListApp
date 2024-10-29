@@ -1,29 +1,24 @@
-    import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Category } from '../modules/category';
 
-    interface Category {
-        id: number;
-        name: string;
-    }
+interface CategoryState {
+    categories: Category[];
+}
 
-    // state
-    interface CategoryState {
-        categories: Category[];
-    }
+const initialState: CategoryState = {
+    categories: [],
+};
 
-    const initialState: CategoryState = {
-        categories: [],
-    };
-
-    // slice
-    const categorySlice = createSlice({
-        name: 'category',
-        initialState,
-        reducers: {
-            setCategories(state, action: PayloadAction<Category[]>) {
-                state.categories = action.payload; // עדכון הקטגוריות ב-state
-            },
+// slice
+const categorySlice = createSlice({
+    name: 'category',
+    initialState,
+    reducers: {
+        setCategories(state, action: PayloadAction<Category[]>) {
+            state.categories = action.payload; 
         },
-    });
+    },
+});
 
-    export const { setCategories } = categorySlice.actions;
-    export default categorySlice.reducer;
+export const { setCategories } = categorySlice.actions; 
+export default categorySlice.reducer; 

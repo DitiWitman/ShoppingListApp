@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, AppBar, Toolbar, Typography, IconButton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Container } from 'react-bootstrap';
 import ShoppingDashboard from '../src/components/ShoppingDashboard';
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <Container>
+    <Container fluid className="p-3">
+      {/* <Header itemCount={5} /> */}
       <ShoppingDashboard />
     </Container>
   );

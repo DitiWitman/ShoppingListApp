@@ -42,7 +42,7 @@ namespace SoppingListApi.Controllers
             if (products == null || !products.Any())
                 return BadRequest("No products to save.");
 
-            _productService.ConfirmOrder(products); // קורא לפונקציה לאישור הזמנה
+            _productService.ConfirmOrder(products);   
 
             return Ok("Order confirmed and products saved.");
         }
@@ -54,6 +54,12 @@ namespace SoppingListApi.Controllers
             var totalItems = _productService.GetTotalItems(); 
 
             return Ok(totalItems);
+        }
+        [HttpDelete("{id}")]
+        public ActionResult DeleteProduct(int id)
+        {
+            _productServiceService.DeleteProduct(id);
+            return NoContent();
         }
 
     }
